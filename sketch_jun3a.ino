@@ -5,9 +5,9 @@
 #include <Adafruit_SSD1306.h>
 
 // --- Cấu hình WiFi và ThingSpeak ---
-String apiKey = "XXVLQW2ILG8W9AZ8"; // Thay bằng API Key của bạn
-const char* ssid = "Nha Tro 4";     // Tên WiFi
-const char* password = "nguyennam"; // Mật khẩu WiFi
+String apiKey = "5F8NIR1N22PYD5WG"; // Thay bằng API Key của bạn
+const char* ssid = "Galaxy A23 AE62";     // Tên WiFi
+const char* password = "agrq7058"; // Mật khẩu WiFi
 const char* server = "api.thingspeak.com";
 
 WiFiClient client;
@@ -207,5 +207,5 @@ void loop() {
   displayTestResult(); // Hiển thị OLED
   sendDataToThingSpeak(); // Gửi dữ liệu
 
-  delay(20000); // 20 giây (giảm tải ThingSpeak)
+  delay(15000); // 15 giây (giảm tải ThingSpeak)
 }
